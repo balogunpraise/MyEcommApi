@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using AutoMapper;
 using DotnetEcommerce.Api.DTOs;
+using DotnetEcommerce.Api.Helpers;
 using DotnetEcommerce.Core.Entities;
 using DotnetEcommerce.Core.Interfaces;
 using DotnetEcommerce.Core.Specifications;
@@ -27,12 +28,16 @@ namespace DotnetEcommerce.Api.Controllers
             _mapper = mapper;
         }
         [HttpGet]
-        public async Task<ActionResult<IReadOnlyList<ProductToReturnDto>>> 
+        public async Task<ActionResult<PagedResponse<ProductToReturnDto>>> 
             GetProducts([FromQuery]ProductSpecParams productParams)
         {
             var spec = new ProductsWithTypesAndBrandsSpecification(productParams);
+            var countSpec = new ProductCountSpecification(productParams);
+            var count = await _productRepo.CountAsync(countSpec);
             var products = await _productRepo.ListAllAsync(spec);
-            return Ok(_mapper.Map < IReadOnlyList<Product>, IReadOnlyList<ProductToReturnDto>>(products));
+            var result = _mapper.Map<IReadOnlyList<Product>, IReadOnlyList<ProductToReturnDto>>(products);
+            return Ok(new PagedResponse<ProductToReturnDto>(productParams.PageNumber, productParams.PageSize,
+                count, result));
         }
 
         [HttpGet("product/{id}")]
