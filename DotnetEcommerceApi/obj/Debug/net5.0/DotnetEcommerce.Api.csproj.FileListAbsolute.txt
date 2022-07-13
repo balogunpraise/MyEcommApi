@@ -132,3 +132,13 @@ C:\PraiseGit\src\DotnetEcommerceApi\obj\Debug\net5.0\DotnetEcommerce.Api.dll
 C:\PraiseGit\src\DotnetEcommerceApi\obj\Debug\net5.0\ref\DotnetEcommerce.Api.dll
 C:\PraiseGit\src\DotnetEcommerceApi\obj\Debug\net5.0\DotnetEcommerce.Api.pdb
 C:\PraiseGit\src\DotnetEcommerceApi\obj\Debug\net5.0\DotnetEcommerce.Api.genruntimeconfig.cache
+C:\PraiseGit\src\DotnetEcommerceApi\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\PraiseGit\src\DotnetEcommerceApi\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\PraiseGit\src\DotnetEcommerceApi\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\PraiseGit\src\DotnetEcommerceApi\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\PraiseGit\src\DotnetEcommerceApi\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\PraiseGit\src\DotnetEcommerceApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\PraiseGit\src\DotnetEcommerceApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\PraiseGit\src\DotnetEcommerceApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\PraiseGit\src\DotnetEcommerceApi\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\PraiseGit\src\DotnetEcommerceApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
